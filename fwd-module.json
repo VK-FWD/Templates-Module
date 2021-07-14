@@ -1,0 +1,9 @@
+{
+  "id": "templates",
+  "name": "Шаблонизатор",
+  "desc": "Модуль для создания шаблоных фраз",
+  "module": "index.js",
+  "require": [
+    "system"
+  ]
+}
