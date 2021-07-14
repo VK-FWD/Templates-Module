@@ -29,6 +29,7 @@ module.exports.startUp = (data, path) => {
             text = text.replace("t:"+templateName, templates[templateName])
         }
 
-        data.vk.replaceMessage(message, text)
+        if(message.text!==text)
+            data.vk.replaceMessage(message, text)
     })
 }
