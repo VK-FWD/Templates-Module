@@ -20,7 +20,7 @@ module.exports.startUp = (data, path) => {
 
         templates[templateName] = templateBody
         await fs.writeFileSync(TEMPLATES_FILE, JSON.stringify(templates));
-        await data.sendMessage(message.peerId, "✔ Шаблон успешно сохранён! Использование в тексте: t:"+templateName)
+        await data.vk.sendMessage(message.peerId, "✔ Шаблон успешно сохранён! Использование в тексте: t:"+templateName)
     }
 
     data.outputListeners.push(async (message) => {
