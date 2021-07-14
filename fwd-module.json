@@ -3,6 +3,7 @@
   "name": "Шаблонизатор",
   "desc": "Модуль для создания шаблоных фраз",
   "module": "index.js",
+  "min_version": 2,
   "require": [
     "system"
   ]
